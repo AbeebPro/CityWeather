@@ -1,0 +1,75 @@
+body {
+	height: 100%;
+	max-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+	font-family: "Roboto", sans-serif;
+	background-image: url("sunset.jpg");
+	background-size: "contain";
+}
+.city-weather{
+	margin: 10%;
+	background-color: #000;
+	opacity: 0.7;
+	color: #fff;
+	width: 90%;
+	max-width: 420px;
+	padding: 5%;
+}
+.city-weather > div{
+	padding: 3% 3%;
+	text-align: center;
+}
+.weather-details > div{
+	padding: 6% 3%;
+}
+.search{
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+}
+input[type="text"], input[type="text"]:hover{
+	outline: none;
+	border: none;
+	border-radius: 14px;
+	padding: 3% 9% 3% 3%;
+}
+.search-button{
+	outline: none;
+	border: none;
+	border-radius: 14px;
+	padding: 3%;
+	cursor: pointer;
+	margin-left: -25px;
+	background-color: gold;
+	font-weight: bold;
+}
+.temp{
+	font-size: 2rem;
+}
+.city, .description {
+	font-size: 1.5rem;
+}
+.processing{
+	visibility: hidden;
+	height: 10px;
+	position: relative;
+}
+.processing:after{
+	visibility: visible;
+	content: "Processing...";
+	position: absolute;
+	color: #fff;
+	top: 0;
+	left: 60px;
+}
+
+@media (max-width: 250px) {
+	input[type="text"], input[type="text"]:hover{
+		padding: 0;
+		width: 150px;
+	}
+}
