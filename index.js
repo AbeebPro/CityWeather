@@ -20,8 +20,9 @@ let weather = {
 		document.querySelector(".wind-speed").innerText = `Wind speed: ${speed}km/h`;
         document.querySelector(".weather-details").classList.remove("processing");
         let body = document.querySelector("body");
-        body.style.backgroundImage = "url('https://source.unsplash.com/1600x1600/?" + name + "')";
-        body.style.backgroundSize = "contain";
+        body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
+        body.style.backgroundSize = "cover";
+        body.style.backgroundPosition = "center";
 	},
 	search: function(){
 		let searchItem = document.querySelector(".search-box").value;
