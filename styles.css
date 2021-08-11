@@ -6,7 +6,8 @@ body {
 	background-color: grey;
 	font-family: "Roboto", sans-serif;
 	background-image: url("sunset.jpg");
-	background-size: contain;
+	background-size: cover;
+	background-position: center;
 }
 .city-weather{
 	margin: 10%;
